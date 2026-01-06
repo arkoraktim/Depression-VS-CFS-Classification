@@ -7,6 +7,7 @@ import streamlit as st
 
 
 ## Load ML Model using Pickle Files
+
 lr = pickle.load(open('lr1.pkl','rb'))
 dt = pickle.load(open('dt1.pkl','rb'))
 rf = pickle.load(open('rf1.pkl','rb'))
@@ -181,6 +182,7 @@ if st.button('Predict Diagnosis'):
     # else:
 
     #     st.success(" Prediction: Both Conditions")
+
 
 
 
