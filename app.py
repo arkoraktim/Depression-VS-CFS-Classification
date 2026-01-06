@@ -7,9 +7,9 @@ import streamlit as st
 
 
 ## Load ML Model using Pickle Files
-lr = pickle.load(open('lr1.pkl','rb'))
-dt = pickle.load(open('dt1.pkl','rb'))
-rf = pickle.load(open('rf1.pkl','rb'))
+lr = pickle.load(open('logisticRegression1.pkl','rb'))
+dt = pickle.load(open('decisionTree1.pkl','rb'))
+rf = pickle.load(open('randomForest1.pkl','rb'))
 
 model = st.sidebar.selectbox('Select the ML Model',
                              ['LogReg','DecisionTree','RandomForest'])
@@ -181,4 +181,5 @@ if st.button('Predict Diagnosis'):
     # else:
 
     #     st.success(" Prediction: Both Conditions")
+
 
